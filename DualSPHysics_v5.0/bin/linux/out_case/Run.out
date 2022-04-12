@@ -1,0 +1,43 @@
+
+
+ <DUALSPHYSICS5> Copyright (c) 2020 by
+ Dr Jose M. Dominguez Alonso, Dr Alejandro Crespo,
+ Prof. Moncho Gomez Gesteira, Prof. Benedict Rogers,
+ Dr Georgios Fourtakas, Prof. Peter Stansby,
+ Dr Renato Vacondio, Dr Corrado Altomare, Dr Angelo Tafuni,
+ Dr Orlando Garcia Feal, Ivan Martinez Estevez
+
+ EPHYSLAB Environmental Physics Laboratory, Universidade de Vigo
+ School of Mechanical, Aerospace and Civil Engineering, University of Manchester
+
+ DualSPHysics is free software: you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public License
+ as published by the Free Software Foundation, either version 2.1 of
+ the License, or (at your option) any later version.
+
+ DualSPHysics is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public License
+ along with DualSPHysics. If not, see <http://www.gnu.org/licenses/>.
+
+
+DualSPHysics5 v5.0.193 (23-07-2021)
+====================================
+Threads by host for parallel execution: 32
+[Initialising JSphCpuSingle  11-04-2022 13:19:32]
+ProgramFile=".../bin/linux/DualSPHysics5.0_linux64"
+ExecutionDir=".../DualSPHysics_v5.0/bin/linux"
+XmlFile=".../bin/linux/CaseDambreak_Def.xml"
+OutputDir=".../bin/linux/out_case"
+OutputDataDir=".../bin/linux/out_case"
+XML-App: unknown
+
+*** Exception (JCaseCtes::LoadXmlRun) at /home/jmena/445s22/DualSPHysics_v5.0.4/DualSPHysics_v5.0/src/source/JCaseCtes.cpp:269
+Text: The item is not found 'case.execution.constants'.
+
+
+Finished execution (code=1).
+

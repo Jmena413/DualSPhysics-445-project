@@ -1,0 +1,8 @@
+/home/jmena/445s22/DualSPHysics_v5.0.4/DualSPHysics_v5.0/src/source/build/CMakeFiles/install.dir
+/home/jmena/445s22/DualSPHysics_v5.0.4/DualSPHysics_v5.0/src/source/build/CMakeFiles/list_install_components.dir
+/home/jmena/445s22/DualSPHysics_v5.0.4/DualSPHysics_v5.0/src/source/build/CMakeFiles/DualSPHysics5.0CPU_linux64.dir
+/home/jmena/445s22/DualSPHysics_v5.0.4/DualSPHysics_v5.0/src/source/build/CMakeFiles/install/strip.dir
+/home/jmena/445s22/DualSPHysics_v5.0.4/DualSPHysics_v5.0/src/source/build/CMakeFiles/install/local.dir
+/home/jmena/445s22/DualSPHysics_v5.0.4/DualSPHysics_v5.0/src/source/build/CMakeFiles/DualSPHysics5.0_linux64.dir
+/home/jmena/445s22/DualSPHysics_v5.0.4/DualSPHysics_v5.0/src/source/build/CMakeFiles/edit_cache.dir
+/home/jmena/445s22/DualSPHysics_v5.0.4/DualSPHysics_v5.0/src/source/build/CMakeFiles/rebuild_cache.dir
