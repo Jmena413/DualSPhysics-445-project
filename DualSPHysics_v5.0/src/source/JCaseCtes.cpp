@@ -30,20 +30,20 @@
 ////==============================================================================
 ///// Compute constants using parameters nonzero.
 ////==============================================================================
-JCaseCtes::StConstants JCaseCtes::CalcConstans(StConstants cte){
- const double dim=(cte.data2d? 2: 3);
- const double dpvol=(cte.data2d? cte.dp*cte.dp: cte.dp*cte.dp*cte.dp);
- const double mg=sqrt((cte.gravity.x*cte.gravity.x)+(cte.gravity.y*cte.gravity.y)+(cte.gravity.z*cte.gravity.z));
- if(cte.coefh)cte.coefhdp=cte.coefh*sqrt(dim);
- else cte.coefh=cte.coefhdp/sqrt(dim);
- if(!cte.cteh)cte.cteh=cte.coefh*sqrt(dim)*cte.dp;
- if(!cte.massbound)cte.massbound=dpvol*cte.rhop0;
- if(!cte.massfluid)cte.massfluid=dpvol*cte.rhop0;
- if(!cte.speedsystem)cte.speedsystem=sqrt(mg*cte.hswl);
- if(!cte.speedsound)cte.speedsound=std::max(cte.coefsound*cte.speedsystem,10.*sqrt(mg*cte.hswl));
- if(!cte.cteb)cte.cteb=cte.speedsound*cte.speedsound*cte.rhop0/cte.gamma;
- return(cte);
-}
+// JCaseCtes::StConstants JCaseCtes::CalcConstans(StConstants cte){
+//  const double dim=(cte.data2d? 2: 3);
+//  const double dpvol=(cte.data2d? cte.dp*cte.dp: cte.dp*cte.dp*cte.dp);
+//  const double mg=sqrt((cte.gravity.x*cte.gravity.x)+(cte.gravity.y*cte.gravity.y)+(cte.gravity.z*cte.gravity.z));
+//  if(cte.coefh)cte.coefhdp=cte.coefh*sqrt(dim);
+//  else cte.coefh=cte.coefhdp/sqrt(dim);
+//  if(!cte.cteh)cte.cteh=cte.coefh*sqrt(dim)*cte.dp;
+//  if(!cte.massbound)cte.massbound=dpvol*cte.rhop0;
+//  if(!cte.massfluid)cte.massfluid=dpvol*cte.rhop0;
+//  if(!cte.speedsystem)cte.speedsystem=sqrt(mg*cte.hswl);
+//  if(!cte.speedsound)cte.speedsound=std::max(cte.coefsound*cte.speedsystem,10.*sqrt(mg*cte.hswl));
+//  if(!cte.cteb)cte.cteb=cte.speedsound*cte.speedsound*cte.rhop0/cte.gamma;
+//  return(cte);
+// }
 
 //==============================================================================
 /// Constructor.
@@ -231,16 +231,16 @@ void JCaseCtes::WriteXmlRun(JXml *sxml,TiXmlElement* node)const{
   WriteXmlElementComment(JXml::AddElementAttrib(node,"massbound","value",GetMassBound(),fmt.c_str()),"","kg");
   fmt=fun::NaturalFmt(GetMassFluid(),11,true);
   WriteXmlElementComment(JXml::AddElementAttrib(node,"massfluid","value",GetMassFluid(),fmt.c_str()),"","kg");
-  JXml::AddElementDouble3(node,"gravity",GetGravity());
-  JXml::AddElementAttrib(node,"cflnumber","value",GetCFLnumber());
-  JXml::AddElementAttrib(node,"gamma","value",GetGamma());
-  JXml::AddElementAttrib(node,"rhop0","value",GetRhop0());
-  if(EpsDefined)JXml::AddElementAttrib(node,"eps","value",GetEps());
-  JXml::AddElementAttrib(node,"dp","value",GetDp());
-  JXml::AddElementAttrib(node,"h","value",GetH(),"%.10E");
-  JXml::AddElementAttrib(node,"b","value",GetB(),"%.10E");
-  JXml::AddElementAttrib(node,"massbound","value",GetMassBound(),"%.10E");
-  JXml::AddElementAttrib(node,"massfluid","value",GetMassFluid(),"%.10E");
+  //JXml::AddElementDouble3(node,"gravity",GetGravity());
+  //JXml::AddElementAttrib(node,"cflnumber","value",GetCFLnumber());
+  //JXml::AddElementAttrib(node,"gamma","value",GetGamma());
+  //JXml::AddElementAttrib(node,"rhop0","value",GetRhop0());
+  //if(EpsDefined)JXml::AddElementAttrib(node,"eps","value",GetEps());
+  //JXml::AddElementAttrib(node,"dp","value",GetDp());
+  //JXml::AddElementAttrib(node,"h","value",GetH(),"%.10E");
+  //JXml::AddElementAttrib(node,"b","value",GetB(),"%.10E");
+  //JXml::AddElementAttrib(node,"massbound","value",GetMassBound(),"%.10E");
+  //JXml::AddElementAttrib(node,"massfluid","value",GetMassFluid(),"%.10E");
 }
 
 //==============================================================================
